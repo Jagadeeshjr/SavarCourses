@@ -1,0 +1,10 @@
+#btn-back-to-top {
+    position: fixed;
+    bottom: 13px;
+    right: 20px;
+    /* height: 45px;
+    width: 45px; */
+    border-radius: 50%;
+    display: none;
+
+}

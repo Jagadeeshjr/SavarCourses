@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savar Courses</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <!-- <link rel="stylesheet" href="css/preloader.css"> -->
+
+    <style>
+        .page-header {
+            margin-top: 5rem !important;
+        }
+
+        .page-header {
+            /* padding: 120px 0px; */
+            padding: 50px 0px;
+            background: #F4FDFF;
+            position: relative;
+            background: url(images/svg/new.svg) no-repeat;
+            background-size: cover;
+            background-position: 0px 10%;
+            text-align: center;
+        }
+
+        .page-header .page-header-content ul li {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .page-header .page-header-content ul li a {
+            color: #fff;
+            opacity: .7;
+        }
+
+        .page-header .page-header-content h1 {
+            color: #fff;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+
+    <div class="section-center">
+        <div class="section-path">
+            <div class="globe">
+                <div class="wrapper">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ Header ------------------->
+
+    <header id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-xl mynavbar">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo/SavarLogo1.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                        <path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                        <path d="M4 6L20 6" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <div class="collapse navbar-collapse glass " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="index.html">Home
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> IT courses
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-center" href="fullStack-development.html">FullStack
+                                    Development</a>
+                                <a class="dropdown-item text-center" href="backend-development.html">Backend
+                                    Development</a>
+                                <a class="dropdown-item text-center" href="frontend-development.html">Frontend
+                                    Development</a>
+                                <a class="dropdown-item text-center" href="mobile-app-development.html">Mobile App
+                                    Development</a>
+                                <a class="dropdown-item text-center" href="cloud-computing.html">Cloud
+                                    Computing</a>
+                                <a class="dropdown-item text-center" href="testing-services.html">Testing
+                                    Services</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Training
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <a class="dropdown-item text-center" href="campus-training.html">Campus
+                                    Training</a>
+                                <a class="dropdown-item text-center" href="online-training.html">Online
+                                    Training</a>
+                                <a class="dropdown-item text-center" href="classroom-training.html">Classroom
+                                    Training</a>
+                                <a class="dropdown-item text-center" href="corporate-training.html">Corporate
+                                    Training</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="placements.html"> Placements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="www.youtube.com" target="_blank" class="btn btn-danger" role="button">Student Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="page-header-content">
+                        <h1>Placements</h1>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="list-inline-item">/</li>
+                            <li class="list-inline-item">
+                                Placements
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @media screen and (max-width:992px) {
+            /* .custom-column-reverse {
+                display: flex;
+                flex-direction: column-reverse;
+            } */
+
+            .top-section img {
+                width: 90%;
+            }
+        }
+    </style>
+
+    <section class="top-section mt-4">
+        <div class="container">
+            <div>
+                <h1 class="text-md-start">Placements at Savar Technologies</h1>
+            </div>
+            <div class="custom-column-reverse">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="pt-5">
+                            <p>
+                                At <b>Savar Technologies</b>, we are dedicated to not just providing comprehensive
+                                training in
+                                software development but also ensuring our students launch successful careers in the
+                                tech
+                                industry. Our robust placement assistance program is designed to connect talented
+                                individuals with leading companies in the field.
+                            </p>
+                            <p>
+                                Our IT On-Job Support mission is to up skill the beginners in IT with the ability to
+                                solve their Real-time complex project requirements. We at Savar Technologies, assist and
+                                render
+                                job support services in IT Courses.
+                            </p>
+                            <p>
+                                If you are one of those, struggling to survive in the job due to lack of technical
+                                abilities or those got a new project and stressed about the work assigned then write to
+                                us. We put forward our best skilled IT consultant, to guide you in achieving the best
+                                result in your work and furnish your deliverables.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/placements/placement-section.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="container">
+            <div>
+                <h1 class="text-center">What Set us Apart</h1>
+            </div>
+            <div class=" row d-flex flex g-3">
+                <div class="col-lg-4">
+                    <div class="connection">
+                        <div class="text-start">
+                            <img src="images/placements/connections2.png" alt="">
+                        </div>
+                        <div>
+                            <h5 class="text-center">Industry Connections</h5>
+                            <p>We have established partnerships and strong connections with a vast network of companies
+                                across various sectors of the software industry, enabling us to offer diverse placement
+                                opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="support">
+                        <div class="text-start">
+                            <img src="images/placements/support.png" alt="">
+                        </div>
+                        <div>
+                            <h5 class="text-center">Tailored Support</h5>
+                            <p>Our placement assistance is tailored to individual needs. From resume building and
+                                interview preparation to networking events, we provide personalized guidance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="counselling">
+                        <div class="text-start">
+                            <img src="images/placements/counselling.png" alt="">
+                        </div>
+                        <div>
+                            <h5 class="text-center">Career Counselling</h5>
+                            <p>Our experienced career counsellors provide valuable insights, guidance, and advice to
+                                help
+                                students make informed decisions about their career paths.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <style>
+        .connection,
+        .support,
+        .counselling {
+            box-shadow: 5px 5px 11px #5a5a5a,
+                -5px -5px 11px #ffffff;
+            border-radius: 10px;
+            border-color: #800080;
+            /* border: 1px solid; */
+            /* height: 300px; */
+            height: 270px;
+            padding: 10px 20px 0px 20px;
+        }
+    </style> -->
+
+    <style>
+        .media-grid .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+
+        .media-grid .row>div {
+            margin: 0;
+            padding: 5px;
+        }
+
+        .media-grid .media-left {
+            padding: 15px 0px 0px 15px;
+        }
+
+        .media-grid .media {
+            height: 100%;
+            align-content: flex-start;
+            border-radius: 20px;
+            /* border: 1px solid; */
+            /* box-shadow: 5px 5px 11px #5a5a5a; */
+            /* box-shadow: 5px 5px 5px 5px #5a5a5a; */
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 3px;
+            padding: 10px 15px 0px 15px;
+        }
+
+        .media:hover {
+            box-shadow: rgba(3, 102, 214) 0px 0px 0px 3px;
+        }
+
+        .media-grid .media-heading {
+            font-size: 28px;
+        }
+    </style>
+
+    <section>
+        <div class="container">
+            <div class="text-center pb-2">
+                <h2>What Set us Apart</h2>
+            </div>
+            <div class="media-grid">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img width="50" height="50" src="images/placements/connections2.png" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <h2 class="media-heading">Industry Connections</h2>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="media-body">
+                                <p>We have established partnerships and strong connections with a vast network of
+                                    companies
+                                    across various sectors of the software industry, enabling us to offer diverse
+                                    placement
+                                    opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img width="50" height="50" src="images/placements/support.png" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <h2 class="media-heading">Tailored Support</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <p>Our placement assistance is tailored to individual needs. From resume building
+                                    and
+                                    interview preparation to networking events, we provide personalized guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img width="50" height="50" src="images/placements/counselling.png" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <h2 class="media-heading">Career Counselling</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <p>Our experienced career counsellors provide valuable insights, guidance, and
+                                    advice to
+                                    help
+                                    students make informed decisions about their career paths.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .preparation,
+        .networking,
+        .job,
+        .support {
+            padding: 15px 10px 0px 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            /* height: 151px; */
+            height: 170px;
+            box-shadow: 19px 22px 0px -12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .preparation:hover {
+            border: 3px solid black;
+        }
+
+        .networking:hover {
+            border: 3px solid black;
+        }
+
+        .job:hover {
+            border: 3px solid black;
+        }
+
+        .support:hover {
+            border: 3px solid black;
+        }
+
+        .icon img {
+            height: 64px;
+            width: 64px;
+        }
+
+        .preparation {
+            background-color: #ea2cff;
+            color: white;
+        }
+
+        .support {
+            background-color: #5e4eff;
+            color: white;
+        }
+
+        .networking {
+            background-color: #fda04d;
+            color: white;
+        }
+
+        .job {
+            /* background-color: #78ffcd; */
+            background-color: #46c0bd;
+            color: white;
+        }
+
+        .process h2 {
+            padding-left: 0px;
+            padding-top: 7px;
+        }
+    </style>
+
+    <section class="process pt-4 pb-3">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="pb-3">Placement Process</h2>
+            </div>
+            <!-- <hr> -->
+            <div class="placement">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="preparation">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon">
+                                        <img src="images/placements/one.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <h2>Preparation</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>We assist students in preparing their resumes,
+                                        enhancing their interview skills through workshops, mock interviews, and
+                                        one-on-one
+                                        coaching
+                                        sessions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="networking">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon">
+                                        <img src="images/placements/two.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <h2>Networking</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>We organize networking events, career fairs, and industry talks, allowing students
+                                    to connect with potential employers and industry professionals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="job">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon">
+                                        <img src="images/placements/three.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <h2>Job Opportunities</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>We continuously update students about job openings, internships, and entry-level
+                                    positions available in reputed companies, ensuring they are aware of relevant
+                                    opportunities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="support">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="icon">
+                                        <img src="images/placements/four.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <h2>Support and Follow-Up</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>We provide ongoing support and follow-up during the application and interview
+                                    process, helping students navigate through offers and negotiations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .testimonials {
+            background: rgb(236, 240, 243);
+        }
+
+        .st-testimonials {
+            position: relative;
+            margin-top: 30px;
+
+            h2 {
+                font-size: 30px;
+                text-align: center;
+                color: #333333;
+                margin-bottom: 50px;
+            }
+
+            .owl-stage-outer {
+                padding: 15px 0px 30px 0px;
+            }
+
+            .owl-nav {
+                display: none;
+            }
+
+            .owl-dots {
+                text-align: center;
+
+                span {
+                    position: relative;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    display: block;
+                    background: #fff;
+                    border: 2px solid #01b0f8;
+                    margin: 0 5px;
+                }
+
+                .active {
+                    box-shadow: none;
+
+                    span {
+                        background: #01b0f8;
+                        box-shadow: none;
+                        height: 12px;
+                        width: 12px;
+                        margin-bottom: -1px;
+                    }
+                }
+            }
+
+            .card {
+                background: #fff;
+                box-shadow: 0 8px 30px -7px #c9dff0;
+                margin: 0 20px;
+                padding: 0 10px;
+                border-radius: 20px;
+                border: 0;
+                height: 420px;
+
+                .card-img-top {
+                    max-width: 100px;
+                    border-radius: 50%;
+                    margin: 15px auto 0;
+                    box-shadow: 0 8px 20px -4px #95abbb;
+                    width: 100px;
+                    height: 100px;
+                }
+
+                h5 {
+                    color: #01b0f8;
+                    font-size: 21px;
+                    line-height: 1.3;
+
+                    span {
+                        font-size: 18px;
+                        color: #666666;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #555;
+                    padding-bottom: 15px;
+                }
+            }
+
+            .active {
+                opacity: 0.5;
+                transition: all 0.3s;
+            }
+
+            .center {
+                opacity: 1;
+
+                h5 {
+                    font-size: 24px;
+
+                    span {
+                        font-size: 20px;
+                    }
+                }
+
+                .card-img-top {
+                    max-width: 100%;
+                    height: 120px;
+                    width: 120px;
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            .st-testimonials {
+                margin-top: 20px;
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav button {
+
+                &.owl-next,
+                &.owl-prev {
+                    outline: 0;
+                }
+            }
+
+            button.owl-dot {
+                outline: 0;
+            }
+        }
+    </style>
+
+    <section class="testimonials pb-3">
+        <div class="container">
+            <div class="st-testimonials">
+                <h2>Our success Stories</h2>
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div>
+                        <div class="card text-center"><img class="card-img-top" src="images/placements/p2.jpg" alt="">
+                            <div class="card-body">
+                                <h5>Anurag <br />
+                                    <span> Full stack Web developer </span>
+                                </h5>
+                                <p class="card-text">“I have just completed my .NET Course from SAVAR Technologies. I
+                                    found it perfect place to learn .NET for beginners and experienced people. I would
+                                    like to thanks trainers for explaining each and every step from beginning with
+                                    sufficient examples to understand the topic.” </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-center"><img class="card-img-top" src="images/placements/p1.jpg" alt="">
+                            <div class="card-body">
+                                <h5>Janvi Singh<br />
+                                    <span> Data scientist </span>
+                                </h5>
+                                <p class="card-text">“Environment is very peaceful to learn things better. Friendly
+                                    manner any doubts we can
+                                    ask at any time, They used to explain all of queries.The trainer is having very good
+                                    knowledge.” </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-center"><img class="card-img-top" src="images/placements/p3.jpg" alt="">
+                            <div class="card-body">
+                                <h5>Nikhil Singh<br />
+                                    <span> Business Analyst </span>
+                                </h5>
+                                <p class="card-text">“I would like to appreciate the placement cell at Savar
+                                    Technologies for the efforts they made for
+                                    providing a fair and ample amount of chances to me. boot-camps and extra classes for
+                                    us
+                                    to enhance our technical and interpersonal skills.” </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card text-center"><img class="card-img-top" src="images/placements/p4.jpg" alt="">
+                            <div class="card-body">
+                                <h5>Kanica<br />
+                                    <span> Selenium tester </span>
+                                </h5>
+                                <p class="card-text">“ I am very Thankful to the faculties of SAVAR Technologies as they
+                                    are very much
+                                    supportive, helpful and the Placement Cell which is also doing great job by
+                                    arranging
+                                    excellent placements of MNCs &amp; good corporate exposure is given to students.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------ Footer ------------------->
+
+    <footer class="text-white pt-0 footer">
+        <div class="container text-center text-md-start">
+            <div class="row text-start text-md-start">
+                <div class="col-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img src="images/logo/SavarLogo1.png" loading="lazy" decoding="async" alt=""
+                        class="footer-image pb-5">
+                    <p>Take the first step towards a rewarding career in
+                        technology.
+                        Explore our courses, connect with us, and begin your journey
+                        towards a brighter future in the world of software and tech.</p>
+                </div>
+                <div class="col-6 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">SERVICES</h5>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="campus-training.html" class="text-white" style="text-decoration: none;"> Campus
+                            Training </a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="online-training.html" class="text-white" style="text-decoration: none;"> Online
+                            Training</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="classroom-training.html" class="text-white" style="text-decoration: none;"> ClassRoom
+                            Training</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="corporate-training.html" class="text-white" style="text-decoration: none;"> Corporate
+                            Training </a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="index.html" class="text-white" style="text-decoration: none;"> IT Courses</a>
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-2 col-xl-2 mx-auto mt-3 ps-5">
+                    <h5 class="mb-4 font-weight-bold text-warning">LINKS</h5>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="index.html" class="text-white" style="text-decoration: none;"> Home</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="aboutus.html" class="text-white" style="text-decoration: none;"> About Us</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="placements.html" class="text-white" style="text-decoration: none;"> Placements</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="internship.html" class="text-white" style="text-decoration: none;"> Internship</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="contactus.html" class="text-white" style="text-decoration: none;"> Contact Us</a>
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">CONTACT INFO</h5>
+                    <p class="footer-location">
+                        <img class="mt-1 me-3" src="images/social-icons/placeholder.png" alt="">
+                        <a href="#" style="color:#fff; text-decoration: none;">
+                            #529/A, 18th Main Rd, 3rd Sector, HSR Layout,
+                            Bengaluru, Karnataka-560102, India
+                        </a>
+                    </p>
+                    <p>
+                        <img class=" me-3" src="images/social-icons/email.png" alt="">
+                        <a style="color:#fff; text-decoration: none;"
+                            href="mailto:info@savartechnologies.com">info@savartechnologies.com</a>
+                    </p>
+                    <p>
+                        <img class="me-3" src="images/social-icons/phone-call.png" alt="">
+                        <a style="color:#fff; text-decoration: none" target="_blank" href="tel:8050373034">+91
+                            8050 373 034</a>
+                    </p>
+                    <p class="contact-hours">
+                        <img class="mt-1 me-3" src="images/social-icons/schedule.png" alt="">
+                        Timings: Mon-Sat (9AM - 8PM)
+                    </p>
+                </div>
+            </div>
+
+            <hr class="mb-2">
+            <div class="row align-items-start">
+                <div class="col-md-7 col-lg-8">
+                    <p class="copyright">
+                        Copyright @
+                        <script>document.write(new Date().getFullYear())</script> <a href="#"
+                            style="text-decoration: none;">
+                            <strong class="text-warning">Savar Technologies.</strong>
+                        </a> All Rights
+                        Reserved
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-start">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.facebook.com/SavarTechnologies"
+                                    class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/facebook .png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank"
+                                    href="https://in.linkedin.com/company/savartechnologies?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+                                    class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/linkedin.png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.instagram.com/savartechnologies"
+                                    class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/instagram.png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.youtube.com/@SavarTechnologies"
+                                    class="btn-floating btn-sm text-white p-1" target="_blank"><img
+                                        src="images/social-icons/youtube.png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://twitter.com/savartechnologies"
+                                    class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/twitter.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button type="button" class="btn btn-danger  btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScripts -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="js/backToTop.js"></script>
+    <script src="js/preloader.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Dropdown hover functionality for desktop/laptop screens
+            if (window.innerWidth > 992) { // Change the breakpoint according to your design
+                $('.dropdown').hover(
+                    function () {
+                        $(this).addClass('show').find('.dropdown-menu').addClass('show');
+                    },
+                    function () {
+                        $(this).removeClass('show').find('.dropdown-menu').removeClass('show');
+                    }
+                );
+            }
+        });
+    </script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            var carousels = function () {
+                $(".owl-carousel1").owlCarousel({
+                    loop: true,
+                    center: true,
+                    margin: 0,
+                    responsiveClass: true,
+                    nav: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: true
+                        },
+                        680: {
+                            items: 2,
+                            nav: true,
+                            loop: false
+                        },
+                        1000: {
+                            items: 3,
+                            nav: true
+                        }
+                    }
+                });
+            };
+
+            (function ($) {
+                carousels();
+            })(jQuery);
+        })();
+    </script>
+
+</body>
+
+</html>

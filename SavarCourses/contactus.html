@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savar Courses</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <!-- <link rel="stylesheet" href="css/preloader.css"> -->
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@700&family=Roboto:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@700&display=swap');
+
+        .page-header {
+            margin-top: 5rem !important;
+        }
+
+        .page-header {
+            /* padding: 120px 0px; */
+            padding: 50px 0px;
+            background: #F4FDFF;
+            position: relative;
+            background: url(images/svg/new.svg) no-repeat;
+            background-size: cover;
+            background-position: 0px 10%;
+            text-align: center;
+        }
+
+        .page-header .page-header-content ul li {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .page-header .page-header-content ul li a {
+            color: #fff;
+            opacity: .7;
+        }
+
+        .page-header .page-header-content h1 {
+            color: #fff;
+            font-size: 60px;
+        }
+
+
+        h1 {
+            font-family: "Quicksand", sans-serif !important;
+            font-size: 68px !important;
+            color: purple;
+        }
+
+        .contact-area {
+            margin-top: 2.5rem !important;
+
+        }
+
+        /* ------------- # Address Container ------------- */
+
+        .address-box {
+            text-align: center;
+            color: #ffffff;
+            width: 285px;
+            margin: 0 95px;
+            position: relative;
+        }
+
+        .address-box img {
+            margin-bottom: 15px;
+        }
+
+        /* ------------- # Contact Form Area ------------- */
+
+        .contact-form-area {
+            background: #ffffff;
+            padding: 20px 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: #000000 2px solid;
+        }
+
+        .contact-form-area h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #223645;
+            margin-bottom: 15px;
+        }
+
+        .contact-form-area form input[type=text],
+        .contact-form-area form input[type=email],
+        .contact-form-area form textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+            border: #000000 1px solid;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .contact-form-area form input[type=text]:focus,
+        .contact-form-area form input[type=email]:focus,
+        .contact-form-area form input[type=number]:focus,
+        .contact-form-area form textarea:focus {
+            box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        .contact-form-area form textarea {
+            height: 300px;
+        }
+
+        .contact-form-area form input[type="number"] {
+            margin-left: 15px;
+            width: 70px;
+            height: 60px;
+        }
+
+        .contact-form-area form input[type="submit"] {
+            border: none;
+        }
+
+        #txtName,
+        #txtEmail,
+        #txtSubject,
+        #txtMobile,
+        #textAreaRadius,
+        #quiz {
+            border-radius: 10px;
+        }
+
+        .math-captcha {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .mybutton {
+            background-color: purple;
+            color: #fff;
+            padding: 15px 14px;
+            border-radius: 10px;
+            margin-left: -13px;
+        }
+
+        .mybutton:hover {
+            background-color: rgb(15, 110, 174);
+            color: #fff
+        }
+
+        .mybutton:hover svg {
+            transform: translateX(1.2rem);
+        }
+
+        .mybutton svg {
+            fill: white;
+            margin-left: 0.25rem;
+            width: 1rem;
+            height: 1rem;
+            transition-duration: 200ms;
+            transition-timing-function: cubic-bezier(0, 0, .2, 1);
+            transform: translateX(0);
+        }
+
+        svg {
+            overflow: hidden;
+            vertical-align: middle;
+        }
+
+        .fs-2 {
+            color: purple;
+        }
+
+        .mainheader {
+            color: purple;
+        }
+
+        .media-grid .row>div>a {
+            text-decoration: none;
+            color: var(--text-color);
+            border-radius: 20px;
+            outline-offset: 1px;
+        }
+
+        .media-grid a>.media {
+            border: 2px solid #c8c8c8;
+            height: 100%;
+            flex-wrap: wrap;
+            outline-offset: -2px;
+            overflow: hidden;
+        }
+
+        .media-grid a>.media:hover {
+            border: purple solid;
+        }
+
+        .media-grid .media {
+            height: 100%;
+            align-content: flex-start;
+            border-radius: 20px;
+        }
+
+        .media {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .media-grid .media-body {
+            padding: 15px;
+        }
+
+        .media-body {
+            flex: 1;
+        }
+
+        .address-box img {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .media-grid .row>div {
+            margin: 0;
+            padding: 5px;
+        }
+
+        .links {
+            text-decoration: none;
+            color: black;
+        }
+
+        .links:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .links:hover svg {
+            transform: translateY(-0.25rem);
+        }
+
+        .follow-us a {
+            font-size: 20px;
+        }
+
+        .card {
+            border-radius: 10px;
+            background: #d6c4ea;
+            box-shadow: 5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+        }
+
+        .map {
+            border-radius: 35px;
+        }
+
+        .location-map {
+            border-radius: 16px;
+            background: #d6c4ea;
+            box-shadow: 5px 5px 10px #c1c1c1,
+                -5px -5px 10px #ffffff;
+        }
+
+        .wave {
+            position: absolute;
+            width: 540px;
+            height: 700px;
+            opacity: 0.6;
+            left: 0;
+            top: 0;
+            margin-left: -50%;
+            margin-top: -70%;
+            background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
+        }
+
+        .wave:nth-child(2),
+        .wave:nth-child(3) {
+            top: 210px;
+        }
+
+        .playing .wave {
+            border-radius: 40%;
+            animation: wave 3000ms infinite linear;
+        }
+
+        .wave {
+            border-radius: 40%;
+            animation: wave 55s infinite linear;
+        }
+
+        .playing .wave:nth-child(2) {
+            animation-duration: 4000ms;
+        }
+
+        .wave:nth-child(2) {
+            animation-duration: 50s;
+        }
+
+        .playing .wave:nth-child(3) {
+            animation-duration: 5000ms;
+        }
+
+        .wave:nth-child(3) {
+            animation-duration: 45s;
+        }
+
+        .media {
+            border-radius: 21px;
+            background: #dfd3ec;
+            box-shadow: 5px 5px 10px #c1c1c1,
+                -5px -5px 10px #ffffff;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+
+            .address-box {
+                margin: 0 170px;
+            }
+
+            .contact-email {
+                padding-left: 28px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .contact-form-area {
+                padding: 20px 10px 0px 10px;
+            }
+
+            .address-box p,
+            a {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+
+    <div class="section-center">
+        <div class="section-path">
+            <div class="globe">
+                <div class="wrapper">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ Header ------------------->
+
+    <header id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-xl mynavbar">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo/SavarLogo1.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                        <path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                        <path d="M4 6L20 6" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <div class="collapse navbar-collapse glass " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="index.html">Home
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> IT courses
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-center" href="fullStack-development.html">FullStack
+                                    Development</a>
+                                <a class="dropdown-item text-center" href="backend-development.html">Backend
+                                    Development</a>
+                                <a class="dropdown-item text-center" href="frontend-development.html">Frontend
+                                    Development</a>
+                                <a class="dropdown-item text-center" href="mobile-app-development.html">Mobile App
+                                    Development</a>
+                                <a class="dropdown-item text-center" href="cloud-computing.html">Cloud
+                                    Computing</a>
+                                <a class="dropdown-item text-center" href="testing-services.html">Testing
+                                    Services</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Training
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <a class="dropdown-item text-center" href="campus-training.html">Campus
+                                    Training</a>
+                                <a class="dropdown-item text-center" href="online-training.html">Online
+                                    Training</a>
+                                <a class="dropdown-item text-center" href="classroom-training.html">Classroom
+                                    Training</a>
+                                <a class="dropdown-item text-center" href="corporate-training.html">Corporate
+                                    Training</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="placements.html"> Placements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mrgl" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="www.youtube.com" target="_blank" class="btn btn-danger" role="button">Student Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-------------------- Contact Section ---------------------->
+
+    <section class="page-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="page-header-content">
+                        <h1>Contact Us</h1>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="list-inline-item">/</li>
+                            <li class="list-inline-item">
+                                contact us
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Area -->
+
+    <section class="contact-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="banner-img">
+                        <img src="images/contact/contact.jpg" alt="SAVAR TECHNOLOGIES" title="Savar Technologies"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="contact-form-area">
+                        <h2 style="color: #000000; text-align: center;">GET IN TOUCH WITH US</h2>
+                        <form action="form.php" method="get">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" name="yourname" id="txtName" placeholder="Your Name" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="youremail" id="txtEmail" placeholder="Your Email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" name="phone" id="txtMobile" placeholder="Your Phone Number"
+                                        required>
+                                </div>
+                                <div class="col">
+                                    <input type="text" name="subject" id="txtSubject" placeholder="Subject" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="textarea-359" id="textAreaRadius" rows="2" style="height: auto;"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="row ps-3 math-captcha">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 pt-3">
+                                            <p>7+8= </p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="number" class="quiz-control" id="quiz" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="col-6 btn mybutton">Send Message<svg width="16" height="16"
+                                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 8.00001C2 7.58579 2.33579 7.25001 2.75 7.25001L11.537 7.25L8.24991 4.30894C7.94122 4.03274 7.91488 3.5586 8.19107 3.24991C8.46727 2.94122 8.94141 2.91488 9.2501 3.19108L14.0001 7.44107C14.1591 7.58335 14.25 7.78663 14.25 8C14.25 8.21338 14.1591 8.41666 14.0001 8.55894L9.2501 12.8089C8.94141 13.0851 8.46727 13.0588 8.19107 12.7501C7.91488 12.4414 7.94122 11.9673 8.24991 11.6911L11.537 8.75L2.75 8.75001C2.33579 8.75001 2 8.41422 2 8.00001Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Address Area -->
+        <div class="container contain">
+            <div class="media-grid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <a>
+                            <div class="media">
+                                <div class="address-box mx-auto text-center">
+                                    <lord-icon src="https://cdn.lordicon.com/iikoxwld.json" trigger="loop"
+                                        state="loop-roll" colors="primary:#e83a30" style="width:50px;height:50px">
+                                    </lord-icon>
+                                    <p class="text-dark">Savar Technologies, 18th Main Rd,
+                                        3rd
+                                        Sector, HSR Layout, Bangalore, Karnataka - 560102</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <a href="tel:++918050373034">
+                            <div class="media">
+                                <div class="address-box text-center">
+                                    <img src="images/contact/Telephone.gif" alt="map">
+                                </div>
+                                <p class="text-black contact-no">+91-8050 373 034</p>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="col-xl-3 col-lg-6">
+                        <a href="mailto:info@savartechnologies.com">
+                            <div class="media">
+                                <div class="address-box text-center mt-3">
+                                    <lord-icon src="https://cdn.lordicon.com/tmqaflqo.json" trigger="loop"
+                                        state="loop-flying" colors="primary:#16a9c7,secondary:#30c9e8,tertiary:#3a3347"
+                                        style="width:100px;height:50px">
+                                    </lord-icon>
+                                </div>
+                                <p class="text-black contact-email mt-3">info@savartechnologies.com</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <a>
+                            <div class="media">
+                                <div class="address-box text-center mt-3">
+                                    <lord-icon src="https://cdn.lordicon.com/wsdieofl.json" trigger="loop"
+                                        state="loop-oscillate" style="width:50px;height:50px">
+                                    </lord-icon>
+                                </div>
+                                <p class="text-black contact-hours mt-3">Open Hours: 9AM - 8PM Mon-Sat
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Follow US And Map Area -->
+
+        <div class="container pb-2 pt-3 follow-us">
+            <div class="row gy-3">
+                <div class="col-xl-4">
+                    <div class="card w-100 pb-0">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2">Follow Us</h5>
+                            <p class="card-text">Connect with us on Social Media Platforms for updates, news,
+                                and
+                                events</p>
+                            <ul>
+                                <li class="list-group-item">
+                                    <a target="_blank" href="https://www.facebook.com/SavarTechnologies" class="links">
+                                        <img class="pe-3" src="images/contact/facebook.png" alt="">
+                                        Facebook <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                            <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list-group-item pt-2">
+                                    <a target="_blank"
+                                        href="https://in.linkedin.com/company/savartechnologies?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+                                        class="links"><img class="pe-3" src="images/contact/linkedin.png"
+                                            alt="">LinkedIn
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                            <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list-group-item pt-2">
+                                    <a target="_blank" href="https://www.instagram.com/savartechnologies"
+                                        class="links"><img class="pe-3" src="images/contact/instagram.png"
+                                            alt="">Instagram<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24">
+                                            <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                                        </svg></a>
+                                </li>
+                                <li class="list-group-item pt-2">
+                                    <a href="https://www.youtube.com/@SavarTechnologies" class="links"><img class="pe-3"
+                                            src="images/contact/youtube.png" alt="">Youtube<svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                            <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                                        </svg></a>
+                                </li>
+                                <li class="list-group-item pt-2">
+                                    <a href="https://twitter.com/savartechnologies" class="links" target="_blank"><img
+                                            class="pe-3" src="images/contact/twitter.png" alt=""> X / Twitter<svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                            <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 map">
+                    <div class="location-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.105176811439!2d77.56469009999999!3d12.900958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1558d38866d5%3A0x40f353fb934c6144!2sSavar%20Technologies!5e0!3m2!1sen!2sin!4v1669459524999!5m2!1sen!2sin"
+                            height="510" style="border:0; width: 100%;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------ Footer ------------------->
+
+    <footer class="text-white pt-0 footer">
+        <div class="container text-center text-md-start">
+            <div class="row text-start text-md-start">
+                <div class="col-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img src="images/logo/SavarLogo1.png" loading="lazy" decoding="async" alt=""
+                        class="footer-image pb-5">
+                    <p>Take the first step towards a rewarding career in
+                        technology.
+                        Explore our courses, connect with us, and begin your journey
+                        towards a brighter future in the world of software and tech.</p>
+                </div>
+                <div class="col-6 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">SERVICES</h5>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="campus-training.html" class="text-white" style="text-decoration: none;"> Campus
+                            Training </a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="online-training.html" class="text-white" style="text-decoration: none;"> Online
+                            Training</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="classroom-training.html" class="text-white" style="text-decoration: none;"> ClassRoom
+                            Training</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="corporate-training.html" class="text-white" style="text-decoration: none;"> Corporate
+                            Training </a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="index.html" class="text-white" style="text-decoration: none;"> IT Courses</a>
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-2 col-xl-2 mx-auto mt-3 ps-5">
+                    <h5 class="mb-4 font-weight-bold text-warning">LINKS</h5>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="index.html" class="text-white" style="text-decoration: none;"> Home</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="aboutus.html" class="text-white" style="text-decoration: none;"> About Us</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="placements.html" class="text-white" style="text-decoration: none;"> Placements</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="internship.html" class="text-white" style="text-decoration: none;"> Internship</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-caret-right me-2" aria-hidden="true"></i>
+                        <a href="contactus.html" class="text-white" style="text-decoration: none;"> Contact Us</a>
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-warning">CONTACT INFO</h5>
+                    <p class="footer-location">
+                        <img class="mt-1 me-3" src="images/social-icons/placeholder.png" alt="">
+                        <a href="#" style="color:#fff; text-decoration: none;">
+                            #529/A, 18th Main Rd, 3rd Sector, HSR Layout,
+                            Bengaluru, Karnataka-560102, India
+                        </a>
+                    </p>
+                    <p>
+                        <img class=" me-3" src="images/social-icons/email.png" alt="">
+                        <a style="color:#fff; text-decoration: none;"
+                            href="mailto:info@savartechnologies.com">info@savartechnologies.com</a>
+                    </p>
+                    <p>
+                        <img class="me-3" src="images/social-icons/phone-call.png" alt="">
+                        <a style="color:#fff; text-decoration: none" target="_blank" href="tel:8050373034">+91-8050 373
+                            034</a>
+                    </p>
+                    <p class="contact-hours">
+                        <img class="mt-1 me-3" src="images/social-icons/schedule.png" alt="">
+                        Timings: Mon-Sat (9AM - 8PM)
+                    </p>
+                </div>
+            </div>
+
+            <hr class="mb-2">
+            <div class="row align-items-start">
+                <div class="col-md-7 col-lg-8">
+                    <p class="copyright">
+                        Copyright @
+                        <script>document.write(new Date().getFullYear())</script> <a href="#"
+                            style="text-decoration: none;">
+                            <strong class="text-warning">Savar Technologies.</strong>
+                        </a> All Rights
+                        Reserved
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-start">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.facebook.com/SavarTechnologies"
+                                    class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/facebook .png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank"
+                                    href="https://in.linkedin.com/company/savartechnologies?trk=public_profile_experience-item_profile-section-card_subtitle-click"
+                                    class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/linkedin.png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.instagram.com/savartechnologies"
+                                    class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/instagram.png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.youtube.com/@SavarTechnologies"
+                                    class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/youtube.png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="#" class="btn-floating btn-sm text-white p-1"><img
+                                        src="images/social-icons/twitter.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button type="button" class="btn btn-danger  btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScripts -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <script src="js/backToTop.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Dropdown hover functionality for desktop/laptop screens
+            if (window.innerWidth > 992) { // Change the breakpoint according to your design
+                $('.dropdown').hover(
+                    function () {
+                        $(this).addClass('show').find('.dropdown-menu').addClass('show');
+                    },
+                    function () {
+                        $(this).removeClass('show').find('.dropdown-menu').removeClass('show');
+                    }
+                );
+            }
+        });
+    </script>
+
+</body>
+
+</html>
